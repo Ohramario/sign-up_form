@@ -2,7 +2,7 @@
 <html lang="en">
 
 <style>
-    @font-face{
+    @font-face {
         font-family: footer-font;
         src: url(font/Norse-Bold.otf);
     }
@@ -17,31 +17,67 @@
 
 <body>
     <div class="container">
-            <div class="left">
-                <div class="logo">
-                    <img class="logo-pic" src="images/odin-lined.png" alt="logo of the odin project">
-                    <p class="logo-name">ODIN</p>
-                </div>
-                <footer>
-                    <p class="footer-content">Photo by Haile West on Unsplash</p>
-                </footer>    
+        <div class="left">
+            <div class="logo">
+                <img class="logo-pic" src="images/odin-lined.png" alt="logo of the odin project">
+                <p class="logo-name">ODIN</p>
             </div>
+            <footer>
+                <p class="footer-content">Photo by Haile West on Unsplash</p>
+            </footer>
+        </div>
         <div class="right">
             <div class="right-top">
                 <p>This is not a real online service!You know you need something like this in your life to help you
                     realize your deepest dreams. Sign up now to get started</p>
                 <p><br>You <em>know</em> you want to.</p>
-                <p>Let's do this!</p> 
+
             </div>
 
             <div class="right-middle">
-                       
+                <p>Let's do this!</p>
+                <form action="/my-handling-form-page" method="post">
+                    <div class="name">
+                        <div class="first-name">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name">
+                        </div>
+                        <div class="last-name">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="email">
+                            <Label for="e-mail">EMAIL</Label>
+                            <input type="text" id="e-mail">
+                        </div>
+                        <div class="number">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="text" id="phone-number">
+                        </div>
+
+
+                    </div>
+                    <div class="password">
+                        <div class="initial-password">
+                            <label for="init-password">PASSWORD</label>
+                            <input type="text" name="initial password" id="init-password">
+                        </div>
+                        <div class="confirm-password">
+                            <label for="c-password">CONFIRM PASSWORD</label>
+                            <input type="text" name="confirm password" id="c-password">
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
             <div class="right-bottom"></div>
         </div>
 
-       
-       
+
+
     </div>
 
 </body>
