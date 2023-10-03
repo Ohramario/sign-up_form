@@ -64,7 +64,7 @@ img{
 .right-top{
     padding-top: 250px;
    
-    background-color: lavender;
+    background-color: rgb(236, 239, 242);
 }
 .right-middle{
     flex-grow: 1;
@@ -74,10 +74,13 @@ img{
 }
 .name{
     display: flex;
+    padding: 15px;
+    
 }
 .first-name{
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 }
 .last-name{
     display: flex;
@@ -85,10 +88,12 @@ img{
 }
 .contact{
     display: flex;
+    padding: 15px;
 }
 .email{
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 }
 .number{
     display: flex;
@@ -96,12 +101,66 @@ img{
 }
 .password{
     display: flex;
+    padding: 15px;
 }
 .initial-password{
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 }
 .confirm-password{
     display: flex;
     flex-direction: column;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+fieldset {
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: gainsboro;
+    border: 1px solid blue;
+    outline: none;
+    box-sizing: border-box;
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
