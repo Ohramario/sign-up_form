@@ -15,12 +15,13 @@
     width: 33.3%;
     min-width: 600px;
     min-height: 1500px;
-   
-    
+    flex-shrink: 2;
+
+
 }
 
 .right {
-    width:66.6%;
+    width: 66.6%;
 }
 
 footer {
@@ -32,7 +33,8 @@ footer {
 }
 
 .logo {
-    background-color: rgba(0, 0, 0, .5);in-content;
+    background-color: rgba(0, 0, 0, .5);
+    in-content;
     color: #fff;
     margin-top: 300px;
 }
@@ -41,86 +43,109 @@ p {
     font-weight: bold;
     font-size: x-large;
 }
-img{
+
+img {
     height: 100px;
     width: 200px
 }
-.logo-pic{
+
+.logo-pic {
     padding: 10px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo-name{
+
+.logo-name {
     font-family: footer-font;
     font-size: 50px;
 }
-.footer-content{
+
+.footer-content {
     font-weight: normal;
 }
 
-.right-top{
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top {
     padding-top: 250px;
-   
+
     background-color: rgb(236, 239, 242);
 }
-.right-middle{
-    flex-grow: 1;
+
+.right-middle {
+    flex-shrink: 0;
+    padding-left: 15px;
 }
-.right-bottom{
-    flex-grow:1;
+
+.right-bottom {
+    flex-shrink: 0;
 }
-.name{
+
+.name {
     display: flex;
-    padding: 15px;
+    
+
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
     
 }
-.first-name{
+
+.email {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
 }
-.last-name{
+
+.number {
     display: flex;
     flex-direction: column;
 }
-.contact{
+
+.password {
     display: flex;
-    padding: 15px;
+    
 }
-.email{
-    display: flex;
-    flex-direction: column;
-    padding-right: 15px;
-}
-.number{
-    display: flex;
-    flex-direction: column;
-}
-.password{
-    display: flex;
-    padding: 15px;
-}
-.initial-password{
+
+.initial-password {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
 }
-.confirm-password{
+
+.confirm-password {
     display: flex;
     flex-direction: column;
 }
+
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
 textarea,
 fieldset {
-  width: 100%;
-  border: 1px solid #E5E7EB;
-  box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    box-sizing: border-box;
 }
 
 input:focus {
@@ -129,38 +154,71 @@ input:focus {
     outline: none;
     box-sizing: border-box;
 }
+
 /* The message box is shown when the user clicks on the password field */
-#message {
-    display:none;
+#message,
+#message2,
+#message3 {
+    display: none;
     background: #f1f1f1;
     color: #000;
     position: relative;
     padding: 20px;
     margin-top: 10px;
-  }
-  #message p {
+}
+
+#message p,
+#message2 h3,
+#message3 h3 {
     padding: 10px 35px;
     font-size: 18px;
-  }
-  
-  /* Add a green text color and a checkmark when the requirements are right */
-  .valid {
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
     color: green;
-  }
-  
-  .valid:before {
+}
+
+.valid:before {
     position: relative;
     left: -35px;
     content: "✔";
-  }
-  
-  /* Add a red text color and an "x" when the requirements are wrong */
-  .invalid {
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
     color: red;
-  }
-  
-  .invalid:before {
+}
+
+.invalid:before {
     position: relative;
     left: -35px;
     content: "✖";
-  }
+}
+
+.right-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(2, 89, 2);
+    color: white;
+    border-radius: 8px;
+    
+    font-size: 16px;
+    
+    
+}
+.login{
+    display: flex;
+
+}
+.already-text, .login-text{
+    font-size: medium;
+}
+.login-text{
+    color: rgb(2, 89, 2);
+}

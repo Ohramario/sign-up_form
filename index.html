@@ -34,7 +34,7 @@
                 <p><br>You <em>know</em> you want to.</p>
             </div>
             <div class="right-middle">
-                <p>Let's do this!</p>
+                <p class="doThis">Let's do this!</p>
                 <form action="/my-handling-form-page" method="post">
                     <div class="name">
                         <div class="first-name">
@@ -66,7 +66,7 @@
                         </div>
                         <div class="confirm-password">
                             <label for="c-password">CONFIRM PASSWORD</label>
-                            <input type="text" name="confirm password" id="c-password">
+                            <input type="text" name="confirm password" id="c-password" required>
                         </div>
                     </div>
                     <div id="message">
@@ -76,10 +76,22 @@
                         <p id="number" class="invalid">A <b>number</b></p>
                         <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                     </div>
+                    <div id="message2">
+                        <h3 id="errorPassword" class="invalid">This password does not match the initial password</h3>
+                    </div>
+                    <div id="message3">
+                        <h3 id="goodPasswod" class="valid">This password matches!</h3>
+                    </div>
             </div>
             </form>
+            <div class="right-bottom">
+                <button class="button">Create Account</button>
+                <div class="login">
+                    <p class="already-text">Already have an account?</p>
+                    <p class="login-text">Login</p>
+                </div>
+            </div>
         </div>
-        <div class="right-bottom"></div>
     </div>
 </body>
 
